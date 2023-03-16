@@ -1,0 +1,6 @@
+*.jpg
+*.txt
+*.cache
+*.png
+*.mp4
+!/Screenshot_20230316_160155.jpg
