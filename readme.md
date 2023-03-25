@@ -1,6 +1,7 @@
 # RoboMaster Season 2023 Rune's labels Transforming Tool
 
-本repo用于从[上交开源数据集制作工具](https://github.com/Spphire/RM-labeling-tool)制作的能量机关数据集转化为yolo多关键点检测的格式。
+~~本repo用于从[上交开源数据集制作工具](https://github.com/Spphire/RM-labeling-tool)制作的能量机关数据集转化为yolo多关键点检测的格式。~~
+上交已内置转换，本repo暂时废置，仅用于对未转换的label使用。或者用于分离训练集和测试集
 即: 
 将
 ```
@@ -43,8 +44,12 @@ write 修改图片和labels后放到conveted_images/labels
 seperate 用于将converted_images/labels 里面的数据按照一定比例分为验证集与数据集
 test 建议用视频
 
+### Author: HDU PHOENIX exia qq:2370632172
+
 # tips
 ~~有用的话求个star(~~
+
+不要混入装甲板数据或者已经转为yolo face的labels
 
 主程序为modify_label.py
 

@@ -4,19 +4,19 @@ import numpy as np
 import math
 import shutil
 
-udisk = "/media/exia/KINGSTON/"
-local = "./"
+path = "/media/exia/CHASESKY/udisk/"
 
-imread_labels_path = udisk + "labels/"            #从上交开源的https://github.com/Spphire/RM-labeling-tool下载的labels的文件夹路径
-save_labels_path = udisk + "converted_labels/"    #更改为关键点检测的labels
-image_path = udisk + "images_jpg/"                #下载的图片文件夹的路径
-save_images_path = udisk + "converted_images/"
 
-train_images = udisk + "train/images/"             #分开后的训练集路径
-train_lables = udisk + "train/labels/"             
+imread_labels_path = path + "labels/"            #从上交开源的https://github.com/Spphire/RM-labeling-tool下载的labels的文件夹路径
+save_labels_path = path + "converted_labels/"    #更改为关键点检测的labels
+image_path = path + "images_jpg/"                #下载的图片文件夹的路径
+save_images_path = path + "converted_images/"
 
-val_images = udisk + "val/images/"                 #分开后的验证集路径
-val_labels = udisk + "val/labels/"
+train_images = path + "train/images/"             #分开后的训练集路径
+train_lables = path + "train/labels/"             
+
+val_images = path + "val/images/"                 #分开后的验证集路径
+val_labels = path + "val/labels/"
 
 train_ratio = 0.8                           #训练集占比
 
@@ -353,11 +353,11 @@ def get_param():
     print("rows:",rows,"\ncols:",cols)
 
 if __name__=="__main__":
-    draw()
-    # write()
-    # separate()
-    # my_label()
-    # get_param()
+    # draw()
+    write()
+    separate()
+    my_label()
+    get_param()
 
 
 
